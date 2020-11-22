@@ -50,7 +50,8 @@ label chapter1:
             p "Hold on now! That’s my name >:<"
             $i+=1
             jump name
-        else:
+        elif pName.lower() == "pim":
+            show pim anger
             p "Fine Then >>>>>:(((((((("
         if not pName:
             $pName = "Pantheon"
