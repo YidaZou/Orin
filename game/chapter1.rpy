@@ -68,7 +68,7 @@ label chapter1:
             pN "I’m not an Orin"
 
     show pim
-    p "*Hey it’s okay! This isn’t the first time someone has gotten stuck in the dream realm! There must be a reason why."
+    p "Hey it’s okay! This isn’t the first time someone has gotten stuck in the dream realm! There must be a reason why."
     show pim worried
     p "Funny that you should appear now...Corruption has been running rampant and I can’t send you back till it’s fixed."
 
