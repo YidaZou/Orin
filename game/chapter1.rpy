@@ -58,7 +58,7 @@ label chapter1:
 
     show pim
     pN "My name is [pName]!"
-    p "*laugh* [pName]! That sure is a funny name..! That’s almost a..."
+    p "[pName]! That sure is a funny name..! That’s almost a..."
     show pim confused
     menu:
         p "Human-like name…..Come to think of it...I know most Orin in the realm"
@@ -87,11 +87,18 @@ label chapter1:
 
     hide pim
     "On the way to Pim’s house, they shared everything about these Orins and dreams and corruption. It was way too much to learn about all at once."
+
     p "This is my place! Or well my girlfriend’s place! Our place! It’s not much but this home! You can stay in Lulu’s twin’s room. They aren’t around anymore."
     show pim confused
     p "Why are you looking at me like that?? Aether just doesn’t live here anymore geez…"
 
     "This Aether sure was well kept. Everything was meticulously organized from movies to music albums. Hopefully, they wouldn’t mind you staying here too much"
+
+    p "This is home! But if you want to travel the town just click on that map of yours:"
+    p "Here you can click on different locations. Different Orins live in different places so feel free to explore. But be wary of corrupted Orins! I wouldn’t want you getting infected!"
+    p "If you pick up any items you can click your bag! I would kill for some sparkles if you ever pick any up!"
+    p "That’s all from me! If you ever need guidance just come back home! I’m sure Lumine or I can help~"
+
 
     # This ends the game.
     return
