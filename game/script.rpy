@@ -4,6 +4,8 @@
 # name of the character.
 
 define p = Character("Pim",color="#FCE59D")
+define l = Character("Lulu",color="#B9FFFF")
+define a = Character("Aether",color="#FCE59D")
 
 # The game starts here.
 
