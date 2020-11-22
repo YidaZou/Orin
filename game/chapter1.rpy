@@ -20,7 +20,6 @@ label chapter1:
     "...Come back-..."
 
     show pim bworried
-    define bp = Character("???",color="FFFFFF")
     bp "Hey! Hey you!"
 
     "Who’s yelling? Hold on...this doesn’t look like my bed…"
@@ -35,7 +34,6 @@ label chapter1:
         "Kiss me and we’ll find out~":
             pN "Kiss me and we’ll find out~"
 
-    define p = Character("Pim",color="#FCE59D")
     show pim confused
     p "Haha what? You must have hit your head pretty hard! I’m Pim. Who are you?"
     define pN = Character("[pName]")
