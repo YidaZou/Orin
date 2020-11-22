@@ -40,17 +40,23 @@ label chapter1:
     p "Haha what? You must have hit your head pretty hard! I’m Pim. Who are you?"
     define pN = Character("[pName]")
     default pName = "You"
+    $i = 0
     label name:
+
         $ pName = renpy.input("What is your name?")
         $ pName = pName.strip()
-        if pName == "Pim":
+        if pName.lower() == "pim" and i!=3:
+            show pim upset
             p "Hold on now! That’s my name >:<"
+            $i+=1
             jump name
+        else:
+            p "Fine Then >>>>>:(((((((("
         if not pName:
             $pName = "Pantheon"
 
-    pN "My name is [pName]!"
     show pim
+    pN "My name is [pName]!"
     p "*laugh* [pName]! That sure is a funny name..! That’s almost a..."
     show pim confused
     menu:
