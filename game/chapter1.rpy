@@ -2,7 +2,7 @@ label chapter1:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-    #testsdasdas
+    
     scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
