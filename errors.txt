@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/chapter1.rpy", line 10: expected statement.
+    p = Character("???")
+      ^
+
+File "game/chapter1.rpy", line 25: expected statement.
+    p = Character("Pim")
+      ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Fri Nov 20 23:44:07 2020
