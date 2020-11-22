@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 10: expected statement.
-    p = Character("???")
-      ^
-
-File "game/chapter1.rpy", line 25: expected statement.
-    p = Character("Pim")
-      ^
+File "game/chapter1.rpy", line 33: expected menuitem
+    show worriedPim
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Nov 20 23:44:07 2020
+Sat Nov 21 21:53:04 2020

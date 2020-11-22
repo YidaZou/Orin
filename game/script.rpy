@@ -3,8 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define p = Character("Pim")
-
+define p = Character("Pim",color="#FCE59D")
 
 # The game starts here.
 
