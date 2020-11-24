@@ -10,10 +10,21 @@ define l = Character("Lulu",color="#B9FFFF")
 define a = Character("Aether",color="#FCE59D")
 
 # The game starts here.
+screen ingameMenu:
+    hbox:
+        textbutton "one"
+        imagebutton idle "Map.png" action Show("mapscreen")
+
+screen mapscreen:
+    add "Mapicon caether.png"
+    hbox:
+        textbutton "one"
+        imagebutton idle "Map.png" action Return()
+
 
 label start:
 
-
+    show screen ingameMenu
     call chapter1
 
 

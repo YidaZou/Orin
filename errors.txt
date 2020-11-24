@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 43: expected statement.
-    i = 0
-      ^
+File "game/script.rpy", line 25: expected a keyword argument, colon, or end of line.
+    imagebutton "Map_%s.png" action Return()
+                ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Nov 21 22:51:27 2020
+Mon Nov 23 22:01:45 2020
