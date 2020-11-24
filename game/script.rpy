@@ -12,14 +12,12 @@ define a = Character("Aether",color="#FCE59D")
 # The game starts here.
 screen ingameMenu:
     hbox:
-        textbutton "one"
-        imagebutton idle "Map.png" action Show("mapscreen")
+        imagebutton auto "Map %s.png" focus_mask True action Show("mapscreen")
 
 screen mapscreen:
-    add "Mapicon caether.png"
+    add "Mapaether hover.png"
     hbox:
-        textbutton "one"
-        imagebutton idle "Map.png" action Return()
+        imagebutton auto "Map %s.png" focus_mask True action Return()
 
 
 label start:
