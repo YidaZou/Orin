@@ -15,7 +15,8 @@ screen ingameMenu:
         imagebutton auto "Map %s.png" focus_mask True action Show("mapscreen")
 
 screen mapscreen:
-    add "Mapaether hover.png"
+    add "Mapchonk.png"
+    imagebutton auto "Mapaether %s.png" focus_mask True action Return()
     hbox:
         imagebutton auto "Map %s.png" focus_mask True action Return()
 
