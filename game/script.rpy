@@ -15,16 +15,18 @@ screen ingameMenu:
         imagebutton auto "Map %s.png" focus_mask True action Show("mapscreen")
 
 screen mapscreen:
+    zorder 10
     add "Mapchonk.png"
-    imagebutton auto "Mapaether %s.png" focus_mask True action Return()
+    imagebutton auto "Mapaether %s.png" focus_mask True action Hide("mapscreen")
     hbox:
-        imagebutton auto "Map %s.png" focus_mask True action Return()
+        imagebutton auto "Map %s.png" focus_mask True action Hide("mapscreen")
 
 
 label start:
 
     show screen ingameMenu
     call chapter1
+
 
 
     # This ends the game.

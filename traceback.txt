@@ -27,4 +27,4 @@ AttributeError: 'bool' object has no attribute 'strip'
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Orin 0.1
-Tue Nov 24 22:42:21 2020
+Fri Nov 27 11:15:02 2020

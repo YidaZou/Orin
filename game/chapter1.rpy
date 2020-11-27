@@ -92,6 +92,7 @@ label chapter1:
 
     "This Aether sure was well kept. Everything was meticulously organized from movies to music albums. Hopefully, they wouldn’t mind you staying here too much"
 
+    show screen ingameMenu
     p "This is home! But if you want to travel the town just click on that map of yours:"
     p "Here you can click on different locations. Different Orins live in different places so feel free to explore. But be wary of corrupted Orins! I wouldn’t want you getting infected!"
     p "If you pick up any items you can click your bag! I would kill for some sparkles if you ever pick any up!"
