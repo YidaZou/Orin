@@ -4,7 +4,6 @@ label chapter1:
     # images directory to show it.
     #test
 
-
     scene bg room
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -22,7 +21,7 @@ label chapter1:
     show pim bworried
     bp "Hey! Hey you!"
 
-    "Who’s yelling? Hold on...this doesn’t look like my bed…"
+    "Who’s yelling? Hold on...{p}this doesn’t look like my bed…"
     "There’s a strange ghostly white deer standing over you. They seem worried? Can deer be worried? Is this even a deer??"
     show pim worried
     menu:
@@ -56,21 +55,21 @@ label chapter1:
 
     show pim
     pN "My name is [pName]!"
-    p "[pName]! That sure is a funny name..! That’s almost a..."
+    p "[pName]! That sure is a funny name..!{p}That’s almost a..."
     show pim confused
     menu:
-        p "Human-like name…..Come to think of it...I know most Orin in the realm"
+        p "Human-like name...Come to think of it...I know most Orin in the realm"
         "Say nothing":
             pN "..."
         "Laugh nervously":
-            pN "he...hehe...he"
+            pN "he...{p}hehe...{p}he"
         "I’m not an Orin":
             pN "I’m not an Orin"
 
     show pim
     p "Hey it’s okay! This isn’t the first time someone has gotten stuck in the dream realm! There must be a reason why."
     show pim worried
-    p "Funny that you should appear now...Corruption has been running rampant and I can’t send you back till it’s fixed."
+    p "Funny that you should appear now...{p}Corruption has been running rampant and I can’t send you back till it’s fixed."
 
     menu:
         "Why not??":
@@ -86,9 +85,10 @@ label chapter1:
     hide pim
     "On the way to Pim’s house, they shared everything about these Orins and dreams and corruption. It was way too much to learn about all at once."
 
+    scene bg aetherroom
     p "This is my place! Or well my girlfriend’s place! Our place! It’s not much but this home! You can stay in Lulu’s twin’s room. They aren’t around anymore."
     show pim confused
-    p "Why are you looking at me like that?? Aether just doesn’t live here anymore geez…"
+    p "Why are you looking at me like that?? Aether just doesn’t live here anymore geez..."
 
     "This Aether sure was well kept. Everything was meticulously organized from movies to music albums. Hopefully, they wouldn’t mind you staying here too much"
 
@@ -97,3 +97,18 @@ label chapter1:
     p "Here you can click on different locations. Different Orins live in different places so feel free to explore. But be wary of corrupted Orins! I wouldn’t want you getting infected!"
     p "If you pick up any items you can click your bag! I would kill for some sparkles if you ever pick any up!"
     p "That’s all from me! If you ever need guidance just come back home! I’m sure Lumine or I can help~"
+    p "Click on the map now!"
+    p "Please click on the map now"
+
+    $L = 0
+    label leave:
+        $L+=1
+        p "Click map"
+        p "Map. Click. Go."
+        if L < 100:
+            jump leave
+        else:
+            label aLeave:
+                show pim anger
+                p "LEAVE"
+                jump aLeave

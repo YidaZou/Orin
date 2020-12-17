@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 22: u'call' is not a keyword argument or valid child for the imagebutton statement.
-    imagebutton auto "Mapaether %s.png" focus_mask True action call aetherChap
-                                                                   ^
+File "game/chapter1.rpy", line 103: expected statement.
+    countL = 0
+           ^
+
+File "game/chapter1.rpy", line 105: expected statement.
+    countL+=1
+          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Dec 17 00:46:33 2020
+Thu Dec 17 01:17:32 2020

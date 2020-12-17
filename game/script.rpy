@@ -23,6 +23,9 @@ screen mapscreen:
     hbox:
         imagebutton auto "Map %s.png" focus_mask True action Hide("mapscreen")
 
+label room:
+    show Bgaetherroom
+
 
 label start:
 

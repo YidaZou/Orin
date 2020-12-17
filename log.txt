@@ -1,4 +1,4 @@
-Thu Dec 17 00:46:32 2020
+Thu Dec 17 01:18:30 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
@@ -6,16 +6,33 @@ Ren'Py 7.3.5.606
 Bootstrap to the start of init.init took 0.08s
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.10s
+Loading error handling took 0.03s
+Loading script took 0.19s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 22: u'call' is not a keyword argument or valid child for the imagebutton statement.
-    imagebutton auto "Mapaether %s.png" focus_mask True action call aetherChap
-                                                                   ^
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.01s
 DPI scale factor: 1.250000
-Interface start took 0.17s
+Creating interface object took 0.10s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.03s
 
 primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
@@ -346,22 +363,49 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 0.930999994278s
+Total time until interface ready: 1.34599995613s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.006944 seconds.
+- Frame drawn at 0.010944 seconds.
+- Frame drawn at 0.023944 seconds.
+- Frame drawn at 0.032944 seconds.
+- 0.032944 seconds to render 5 frames.
+
+Full traceback:
+  File "game/script.rpy", line 33, in script call
+    call chapter1
+  File "game/chapter1.rpy", line 108, in script
+    if L !> 100:
+  File "F:\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "F:\renpy-7.3.5-sdk\renpy\python.py", line 2057, in py_eval
+    code = py_compile(code, 'eval')
+  File "F:\renpy-7.3.5-sdk\renpy\python.py", line 692, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/chapter1.rpy, line 108)
+
+While running game code:
+  File "game/script.rpy", line 33, in script call
+    call chapter1
+  File "game/chapter1.rpy", line 108, in script
+    if L !> 100:
+SyntaxError: invalid syntax (game/chapter1.rpy, line 108)
 Resetting cache.
-Bootstrap to the start of init.init took 126.62s
+Bootstrap to the start of init.init took 59.87s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.09s
+Loading script took 0.14s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.03s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\young\\AppData\\Roaming/RenPy/backups\\Orin':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
@@ -374,7 +418,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.07s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
@@ -702,4 +746,34 @@ Using gl renderer.
 Texture testing:
 - Hardware max texture size: 16384
 - 64px textures work.
-- 128
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 60.5439999104s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.006000 seconds.
+- Frame drawn at 0.012000 seconds.
+- Frame drawn at 0.019000 seconds.
+- Frame drawn at 0.027000 seconds.
+- 0.027000 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+The window was minimized.
+The window was restored.
+
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Screen sizes: virtual=(1920, 1080) physical=(2373, 1335) drawable=(2373, 1335)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
