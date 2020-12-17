@@ -24,7 +24,7 @@ screen mapscreen:
 
 label start:
 
-    show screen ingameMenu
+    
     call chapter1
 
 
