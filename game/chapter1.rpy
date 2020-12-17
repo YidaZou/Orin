@@ -97,7 +97,3 @@ label chapter1:
     p "Here you can click on different locations. Different Orins live in different places so feel free to explore. But be wary of corrupted Orins! I wouldn’t want you getting infected!"
     p "If you pick up any items you can click your bag! I would kill for some sparkles if you ever pick any up!"
     p "That’s all from me! If you ever need guidance just come back home! I’m sure Lumine or I can help~"
-
-
-    # This ends the game.
-    return

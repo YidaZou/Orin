@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: end of line expected.
-    imagebutton auto "Mapaether %s.png" focus_mask True action Return()
-                                        ^
-
-File "game/script.rpy", line 20: end of line expected.
-    imagebutton auto "Map %s.png" focus_mask True action Return()
-                                  ^
+File "game/script.rpy", line 22: u'call' is not a keyword argument or valid child for the imagebutton statement.
+    imagebutton auto "Mapaether %s.png" focus_mask True action call aetherChap
+                                                                   ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Nov 27 11:19:48 2020
+Thu Dec 17 00:46:33 2020
