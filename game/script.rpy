@@ -12,19 +12,14 @@ define a = Character("Aether",color="#FCE59D")
 # The game starts here.
 
 screen ingameMenu:
-    zorder 9
     hbox:
-        imagebutton auto "Map %s.png" focus_mask True action Show("mapscreen")
+        imagebutton auto "Map/Map %s.png" focus_mask True action Show("mapscreen")
 
 screen mapscreen:
-    zorder 10
-    add "Mapchonk.png"
-    imagebutton auto "Mapaether %s.png" focus_mask True action Call("aetherChap")
+    add "Map/Mapchonk.png"
+    imagebutton auto "Map/Mapaether %s.png" focus_mask True action Jump("aetherChap")
     hbox:
-        imagebutton auto "Map %s.png" focus_mask True action Hide("mapscreen")
-
-label room:
-    show Bgaetherroom
+        imagebutton auto "Map/Map %s.png" focus_mask True action Hide("mapscreen")
 
 
 label start:

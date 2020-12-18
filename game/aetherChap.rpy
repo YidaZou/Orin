@@ -1,4 +1,6 @@
 label aetherChap:
+    scene bg aether
+
     "You enter a clearing of misty trees. This place seems strangely familiar….Up ahead you hear the soft sounds of crying."
     menu:
         "Hello?":
