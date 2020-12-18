@@ -6,8 +6,9 @@
 define bp = Character("???",color="FFFFFF") #unseen characters
 
 define p = Character("Pim",color="#FCE59D")
-define l = Character("Lulu",color="#B9FFFF")
-define a = Character("Aether",color="#FCE59D")
+define l = Character("Lumine",color="#B9FFFF")
+define a = Character("Aether",color="#DA2119")
+define al = Character("Alatus",color="#1164B4")
 
 # The game starts here.
 
@@ -17,14 +18,19 @@ screen ingameMenu:
 
 screen mapscreen:
     add "Map/Mapchonk.png"
-    imagebutton auto "Map/Mapaether %s.png" focus_mask True action Jump("aetherChap")
+    #Aether
+    imagebutton auto "Map/Mapaether %s.png" focus_mask True action [Hide("mapscreen"), Jump("aetherChap")]
+
+
+    #Alatus
+    imagebutton auto "Map/Mapalatus %s.png" focus_mask True action [Hide("mapscreen"), Jump("alatusChap")]
     hbox:
         imagebutton auto "Map/Map %s.png" focus_mask True action Hide("mapscreen")
 
 
 label start:
 
-
+    show screen ingameMenu
     call chapter1
 
 

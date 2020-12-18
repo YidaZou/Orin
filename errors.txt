@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 20: u'ac' is not a keyword argument or valid child for the imagebutton statement.
-    imagebutton auto "Mapaether %s.png" focus_mask True action Jump("aetherChap") ac
-                                                                                    ^
+File "game/script.rpy", line 20: u'Hide' is not a keyword argument or valid child for the imagebutton statement.
+    imagebutton auto "Map/Mapaether %s.png" focus_mask True action Jump("aetherChap") Hide("mapscreen")
+                                                                                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Dec 18 00:28:15 2020
+Fri Dec 18 00:37:05 2020
