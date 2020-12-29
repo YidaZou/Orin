@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 20: u'Hide' is not a keyword argument or valid child for the imagebutton statement.
-    imagebutton auto "Map/Mapaether %s.png" focus_mask True action Jump("aetherChap") Hide("mapscreen")
-                                                                                          ^
+File "game/aetherChap.rpy", line 7: expected 'image_name_component' not found.
+    show "aether j.png" zorder 10
+         ^
+
+File "game/aetherChap.rpy", line 9: expected 'image_name_component' not found.
+    hide "aether j.png"
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Dec 18 00:37:05 2020
+Mon Dec 28 23:33:08 2020

@@ -2,6 +2,14 @@ label aetherChap:
     scene bg aetherforest
 
     "You enter a clearing of misty trees. This place seems strangely familiar….Up ahead you hear the soft sounds of crying."
+    window hide
+    image j = "aether j.png"
+    play sound "audio/Jumpscare.mp3"
+    show j zorder 10
+    pause 5
+    hide j
+    window auto
+
     menu:
         "Hello?":
             "At the sound of your voice, the trees seemed to tremble and shake. A cloaked figure slowly moved from the mist"
